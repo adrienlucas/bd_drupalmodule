@@ -1,0 +1,4 @@
+services:
+    todo.dao.todo:
+        class: Drupal\todo\DAO\TodoDAO
+        arguments: ["@database"]

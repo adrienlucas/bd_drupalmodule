@@ -1,0 +1,33 @@
+todo.list:
+    path: /list
+    defaults: {_controller: "\\Drupal\\todo\\Controller\\TodoController::listAction"}
+    requirements:
+        _method: "GET"
+        _permission: 'access content'
+#    methods: [GET]
+
+todo.detail:
+    path: /todo/{id}
+    defaults: {_controller: "\\Drupal\\todo\\Controller\\TodoController::detailAction"}
+    requirements:
+        _permission: 'access content'
+
+todo.create:
+    path: /list/create
+    defaults: {_controller: "\\Drupal\\todo\\Controller\\TodoController::createAction"}
+    requirements:
+        _method: POST
+        _permission: 'access content'
+#    methods: [POST]
+
+todo.close:
+    path: /todo/{id}/close
+    defaults: {_controller: "\\Drupal\\todo\\Controller\\TodoController::closeAction"}
+    requirements:
+        _permission: 'access content'
+
+todo.delete:
+    path: /todo/{id}/delete
+    defaults: {_controller: "\\Drupal\\todo\\Controller\\TodoController::deleteAction"}
+    requirements:
+        _permission: 'access content'

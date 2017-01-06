@@ -1,0 +1,5 @@
+name: todo
+type: module
+description: My Todo Module
+core: 8.x
+package: Todo
